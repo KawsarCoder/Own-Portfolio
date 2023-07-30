@@ -1,0 +1,27 @@
+@keyframes colorAnimation {
+  0% {
+    background: -webkit-linear-gradient(#ec4899, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-linear-gradient(#a855f7, #3f83f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-linear-gradient(#3f83f8, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.primary-gradiant {
+  animation: colorAnimation 5s infinite;
+}
+.btn-style {
+  box-shadow: 2px 3px 7px 0px #b6b6b7;
+}
+.btn-style:hover {
+  box-shadow: 0px 0px 10px 0px #b6b6b7;
+}

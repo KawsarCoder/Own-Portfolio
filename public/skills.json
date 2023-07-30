@@ -1,0 +1,117 @@
+[
+  {
+    "category": "Frontend",
+    "img": "./Images/HTML.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/css.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/Bootsrap.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/JS.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/React.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/Tailwind.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/MaterialUI.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/Flowbit.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/redux.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/NodeJS.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/exprss.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/mongoDB.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/python.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/github.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/canva.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/netlify.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/NPM.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/vscode.png",
+    "experienceLevel": "Expert"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/firebase.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/vercel.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/chatgpt.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/bard.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/pycharm.png",
+    "experienceLevel": "Intermediate"
+  }
+]
