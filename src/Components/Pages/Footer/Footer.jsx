@@ -1,4 +1,3 @@
-import React from "react";
 import logoImage from "../../../../public/Images/Logo.png";
 import Resume from "../../../../public/Images/WebDeveloper.pdf";
 import Certificate from "../../../../public/Images/WebCertificate.pdf";
@@ -71,6 +70,7 @@ const Footer = () => {
                         href="https://github.com/kawsarcoder"
                         target="_blank"
                         className="hover:underline "
+                        rel="noreferrer"
                       >
                         Github
                       </a>
@@ -80,6 +80,7 @@ const Footer = () => {
                         href="https://www.linkedin.com/in/mdkawsar1403/"
                         target="_blank"
                         className="hover:underline"
+                        rel="noreferrer"
                       >
                         LinkedIn
                       </a>
@@ -108,11 +109,12 @@ const Footer = () => {
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
               <span className="text-sm text-primary sm:text-center dark:text-gray-400">
-                © 2023{" "}
+                © 2025{" "}
                 <a
                   href="https://www.linkedin.com/in/mdkawsar1403/"
                   target="_blank"
                   className="hover:underline"
+                  rel="noreferrer"
                 >
                   MD Kawsar
                 </a>
@@ -124,6 +126,7 @@ const Footer = () => {
                   href="https://web.facebook.com/mohammod.kawsar.946/"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-facebook"></i>
@@ -132,9 +135,10 @@ const Footer = () => {
 
                 {/* instagram icon  */}
                 <a
-                  href="https://www.instagram.com/developer.kawsar/"
+                  href="https://www.instagram.com/code.with.kawsar/"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-instagram"></i>
@@ -146,6 +150,7 @@ const Footer = () => {
                   href="https://github.com/kawsarcoder"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-github"></i>
@@ -157,6 +162,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/mdkawsar1403/"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-2 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-linkedin-in"></i>
@@ -167,6 +173,7 @@ const Footer = () => {
                   href="https://discord.com/channels/@md.kawsar"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-discord"></i>
@@ -177,6 +184,7 @@ const Footer = () => {
                   href="https://youtube.com/@code.with.kawsar"
                   target="_blank"
                   className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
+                  rel="noreferrer"
                 >
                   <span>
                     <i className="fa-brands text-md text-primary fa-youtube"></i>

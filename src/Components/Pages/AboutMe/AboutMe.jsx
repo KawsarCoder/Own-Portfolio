@@ -1,4 +1,3 @@
-import React from "react";
 import secondImage from "../../../../public/Images/SecondImage.png";
 import Resume from "../../../../public/Images/WebDeveloper.pdf";
 import NumberCounter from "./NumberCounter/NumberCounter";
@@ -30,14 +29,14 @@ const AboutMe = () => {
           </h5>
           {/* about me text  */}
           <p className="mb-3 font-normal text-gray-500 text-justify dark:text-gray-400">
-            Hello, I'm MD Kawsar, a passionate Web Developer with a focus on
-            MERN Stack development. Currently pursuing a diploma in Computer
+            Hello, I am MD Kawsar, a passionate Web Developer with a focus on
+            Full Stack development. Currently pursuing a diploma in Computer
             Technology at Chattogram Polytechnic Institute, I thrive on turning
             innovative ideas into fully functional and visually appealing
             websites and web applications. My journey in the world of
             programming has been an exciting one, and I constantly seek new
             challenges to expand my skill set. With a strong foundation in the
-            MERN Stack and a drive for continuous learning, I am dedicated to
+            Full Stack and a drive for continuous learning, I am dedicated to
             creating seamless user experiences and contributing to the
             ever-evolving digital landscape.
           </p>
@@ -70,7 +69,7 @@ const AboutMe = () => {
                 <div className="rounded-full w-32 h-32 hover:text-bgColor grid justify-center hover:bg-gradient-to-r from-FourtColor to-thirdColor shadow-lg border-[#f7f9ff] border-8 ">
                   <div className="rounded-full w-28 h-28 p-5 shadow-lg border-secondary border-8 text-center">
                     <i className="fa-solid fa-road-circle-check text-2xl"></i>
-                    <NumberCounter maxNumber={2} />
+                    <NumberCounter maxNumber={3} />
                   </div>
                 </div>
                 <span className="font-bold justify-center grid text-center  mt-5 text-md">
@@ -94,7 +93,7 @@ const AboutMe = () => {
                 <div className="rounded-full w-32 h-32 hover:text-bgColor grid justify-center hover:bg-gradient-to-r from-FourtColor to-thirdColor shadow-lg border-[#f7f9ff] border-8 ">
                   <div className="rounded-full w-28 h-28 p-5 shadow-lg border-secondary border-8 text-center">
                     <i className="fa-solid fa-clock text-2xl"></i>
-                    <NumberCounter maxNumber={8} />
+                    <NumberCounter maxNumber={12} />
                   </div>
                 </div>
                 <span className="font-bold justify-center grid text-center  mt-5 text-md">

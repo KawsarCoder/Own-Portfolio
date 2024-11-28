@@ -1,5 +1,3 @@
-import React from "react";
-
 const MyServices = () => {
   return (
     // service section
@@ -28,9 +26,9 @@ const MyServices = () => {
                 Experience 2y+
               </time>
               <p className="text-base font-normal dark:text-gray-400 text-justify">
-                Web design encompasses the art of crafting a website's
-                appearance and user experience. It involves meticulous planning
-                and execution, combining elements like layout, images, colors,
+                Web design encompasses the art of crafting a websites appearance
+                and user experience. It involves meticulous planning and
+                execution, combining elements like layout, images, colors,
                 fonts, and graphics to create a visually appealing and engaging
                 online environment.
               </p>
@@ -48,8 +46,8 @@ const MyServices = () => {
               <h3 className="text-lg font-semibold text-primary dark:text-white">
                 Web Developer
               </h3>
-              <time className="block mb-2 text-sm font-normal text-gray-400 leading-none dark:text-gray-500">
-                Experience 1y+
+              <time className="block mb-2 text-sm font-normal text-gray-400 leading-none dark:text-gray-300 hover:text-white">
+                Experience 3y+
               </time>
               <p className="text-base font-normal hover:text-bgColor dark:text-gray-400 text-justify">
                 Web development entails creating websites for the Internet or
@@ -70,16 +68,18 @@ const MyServices = () => {
             </div>
             <div className="mt-3 sm:pr-8 shadow-inner p-5 rounded-lg text-gray-500 hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
               <h3 className="text-lg font-semibold text-primary dark:text-white">
-                Bug Fixing
+                Ads & SEO
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Experience 1y+
               </time>
               <p className="text-base font-normal dark:text-gray-400 text-justify">
-                Bug fixing is a critical aspect of web development, as it
-                entails detecting and rectifying problems or flaws within a web
-                application. It holds significant essential in ensuring the
-                smooth functioning and reliability of every web solution.
+                Ads and SEO are vital components of digital marketing, focusing
+                on boosting visibility and driving traffic to websites or
+                platforms. Ads involve creating and running targeted campaigns
+                to reach the right audience, while SEO ensures that your content
+                ranks high in search engine results, attracting organic
+                visitors.
               </p>
             </div>
           </li>

@@ -1,4 +1,3 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
 import mainImage from "../../../../public/Images/mainImage.png";
 
@@ -16,7 +15,7 @@ const Header = () => {
         </h2>
         {/* My name  */}
         <h1 className="text-xl font-bold text-primary my-2">
-          It's Me,{" "}
+          Its Me,{" "}
           <span className="text-FourtColor md:text-4xl text-3xl">
             Md. Kawsar
           </span>
@@ -29,7 +28,7 @@ const Header = () => {
               options={{
                 strings: [
                   "Web Developer",
-                  "MERN Stack Developer",
+                  "Full Stack Developer",
                   "ReactJS Developer",
                   "Front-End Developer",
                 ],
@@ -53,6 +52,7 @@ const Header = () => {
               className="px-4 py-3"
               href="https://www.linkedin.com/in/mdkawsar1403/"
               target="_blank"
+              rel="noreferrer"
             >
               <span className="ml-3">
                 <i className="fa-solid fa-user-tie mr-3"></i>
@@ -61,7 +61,7 @@ const Header = () => {
             </a>
           </button>
           <span className="text-thirdColor font-bold md:text-3xl text-2xl">
-            Let's Follow Here :
+            Lets Follow Here :
           </span>
           <div className="py-4 mt-5 font-bold w-[60%] border-primary btn-style rounded-md flex text-primary justify-evenly">
             {/* facebook icon  */}
@@ -69,6 +69,7 @@ const Header = () => {
               href="https://web.facebook.com/mohammod.kawsar.946/"
               target="_blank"
               className="border-primary border-2 rounded-full  w-[40px] h-[40px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-green-400"
+              rel="noreferrer"
             >
               <span>
                 <i className="fa-brands text-2xl text-primary fa-facebook"></i>
@@ -77,9 +78,10 @@ const Header = () => {
 
             {/* instagram icon  */}
             <a
-              href="https://www.instagram.com/developer.kawsar/"
+              href="https://www.instagram.com/code.with.kawsar/"
               target="_blank"
               className="border-primary border-2 rounded-full  w-[40px] h-[40px] px-2 py-0.5 hover:bg-gradient-to-r from-FourtColor to-green-400"
+              rel="noreferrer"
             >
               <span>
                 <i className="fa-brands text-2xl text-primary fa-instagram"></i>
@@ -91,6 +93,7 @@ const Header = () => {
               href="https://github.com/kawsarcoder"
               target="_blank"
               className="border-primary border-2 rounded-full  w-[40px] h-[40px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-green-400"
+              rel="noreferrer"
             >
               <span>
                 <i className="fa-brands text-2xl text-primary fa-github"></i>
@@ -102,6 +105,7 @@ const Header = () => {
               href="https://www.linkedin.com/in/mdkawsar1403/"
               target="_blank"
               className="border-primary border-2 rounded-full  w-[40px] h-[40px] px-2 py-0.5 hover:bg-gradient-to-r from-FourtColor to-green-400"
+              rel="noreferrer"
             >
               <span>
                 <i className="fa-brands text-2xl text-primary fa-linkedin-in"></i>

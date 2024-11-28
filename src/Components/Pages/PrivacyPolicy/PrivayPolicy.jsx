@@ -1,4 +1,3 @@
-import React from "react";
 import PrivacyPolicy from "../../../../public/Images/PrivacyPolicy.png";
 
 const PrivayPolicy = () => {

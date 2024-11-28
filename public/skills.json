@@ -26,7 +26,7 @@
   },
   {
     "category": "Frontend",
-    "img": "./Images/Tailwind.png",
+    "img": "./Images/tailwind.svg",
     "experienceLevel": "Expert"
   },
   {
@@ -42,26 +42,61 @@
   {
     "category": "Frontend",
     "img": "./Images/redux.png",
-    "experienceLevel": "Beginner"
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Frontend",
+    "img": "./Images/nextjs.svg",
+    "experienceLevel": "Intermediate"
   },
   {
     "category": "Backend",
     "img": "./Images/NodeJS.png",
-    "experienceLevel": "Beginner"
+    "experienceLevel": "Intermediate"
   },
   {
     "category": "Backend",
     "img": "./Images/exprss.png",
-    "experienceLevel": "Beginner"
+    "experienceLevel": "Intermediate"
   },
   {
     "category": "Backend",
     "img": "./Images/mongoDB.png",
-    "experienceLevel": "Beginner"
+    "experienceLevel": "Intermediate"
   },
   {
     "category": "Backend",
     "img": "./Images/python.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/Typescript.svg",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/mongoose.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/postgreSQL.png",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/prisma.svg",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/graphql.svg",
+    "experienceLevel": "Beginner"
+  },
+  {
+    "category": "Backend",
+    "img": "./Images/docker.png",
     "experienceLevel": "Beginner"
   },
   {
@@ -79,11 +114,7 @@
     "img": "./Images/netlify.png",
     "experienceLevel": "Expert"
   },
-  {
-    "category": "Tools",
-    "img": "./Images/NPM.png",
-    "experienceLevel": "Intermediate"
-  },
+
   {
     "category": "Tools",
     "img": "./Images/vscode.png",
@@ -92,26 +123,56 @@
   {
     "category": "Tools",
     "img": "./Images/firebase.png",
-    "experienceLevel": "Intermediate"
+    "experienceLevel": "Expert"
   },
   {
     "category": "Tools",
     "img": "./Images/vercel.png",
-    "experienceLevel": "Intermediate"
+    "experienceLevel": "Expert"
   },
   {
     "category": "Tools",
     "img": "./Images/chatgpt.png",
-    "experienceLevel": "Intermediate"
+    "experienceLevel": "Expert"
   },
   {
     "category": "Tools",
     "img": "./Images/bard.png",
-    "experienceLevel": "Intermediate"
+    "experienceLevel": "Expert"
   },
   {
     "category": "Tools",
     "img": "./Images/pycharm.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/Wordpress.svg",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/WooCommerce.svg",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/elementor.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/Notion.png",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/postman.svg",
+    "experienceLevel": "Intermediate"
+  },
+  {
+    "category": "Tools",
+    "img": "./Images/framerMotion.svg",
     "experienceLevel": "Intermediate"
   }
 ]

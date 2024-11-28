@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import skillJson from "../../../../public/skills.json";
 import Aos from "aos";
@@ -57,7 +56,7 @@ const MySkills = () => {
         <TabPanel className={"flex justify-center mt-20"}>
           <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 w-[65%]">
             {skillJson.map((skill) => (
-              <div className="tooltip">
+              <div className="tooltip" key={skill}>
                 <img
                   src={skill.img}
                   key={skill.img}
@@ -76,7 +75,7 @@ const MySkills = () => {
             {skillJson.map(
               (skill) =>
                 skill.category === "Frontend" && (
-                  <div className="tooltip">
+                  <div className="tooltip" key={skill}>
                     <img
                       src={skill.img}
                       className="min-h-full p-7 shadow-lg rounded-2xl hover:border-8 hover:border-secondary hover:bg-gradient-to-r from-FourtColor to-thirdColor"
@@ -95,7 +94,7 @@ const MySkills = () => {
             {skillJson.map(
               (skill) =>
                 skill.category === "Backend" && (
-                  <div className="tooltip">
+                  <div className="tooltip" key={skill}>
                     <img
                       src={skill.img}
                       className="min-h-full p-7 shadow-lg rounded-2xl hover:border-8 hover:border-secondary hover:bg-gradient-to-r from-FourtColor to-thirdColor"
@@ -114,7 +113,7 @@ const MySkills = () => {
             {skillJson.map(
               (skill) =>
                 skill.category === "Tools" && (
-                  <div className="tooltip">
+                  <div className="tooltip" key={skill}>
                     <img
                       src={skill.img}
                       className="min-h-full p-7 shadow-lg rounded-2xl hover:border-8 hover:border-secondary hover:bg-gradient-to-r from-FourtColor to-thirdColor"

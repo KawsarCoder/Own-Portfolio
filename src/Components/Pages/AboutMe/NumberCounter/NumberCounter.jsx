@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 
+// eslint-disable-next-line react/prop-types
 const NumberCounter = ({ maxNumber }) => {
   const [count, setCount] = useState(0);
   const [isCounting, setIsCounting] = useState(false);

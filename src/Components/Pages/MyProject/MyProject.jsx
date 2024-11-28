@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import metaTubeImg from "../../../../public/Images/metaTube.png";
 import metaLearnImg from "../../../../public/Images/metaLearn.png";
 import carMerchantryImg from "../../../../public/Images/carMerchantry.png";
@@ -30,7 +29,11 @@ const MyProject = () => {
           {/* meta tube details  */}
           <div className="flex lg:ml-2 flex-col md:col-span-2 justify-between p-4 leading-normal">
             <div className="grid grid-cols-3 gap-2">
-              <a href="https://meta-tube-c8397.web.app/" target="_blank">
+              <a
+                href="https://meta-tube-c8397.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Live Link
@@ -40,6 +43,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Meta-Tube-Client-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -50,6 +54,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Meta-Tube-server-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -110,7 +115,11 @@ const MyProject = () => {
           {/* meta learn details  */}
           <div className="flex flex-col justify-between p-4 leading-normal">
             <div className="grid grid-cols-3 gap-2">
-              <a href="https://meta-learn-5c198.web.app/" target="_blank">
+              <a
+                href="https://meta-learn-5c198.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Live Link
@@ -120,6 +129,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Meta-Learn-Client-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -130,6 +140,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Meta-Learn-server-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -190,7 +201,11 @@ const MyProject = () => {
           {/* car merchantry details  */}
           <div className="flex flex-col justify-between p-4 leading-normal">
             <div className="grid grid-cols-3 gap-2 ">
-              <a href="https://car-merchantry.web.app/" target="_blank">
+              <a
+                href="https://car-merchantry.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Live Link
@@ -200,6 +215,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Car-Merchantry-Client-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -210,6 +226,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Meta-Learn-server-Side"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                   <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -274,6 +291,7 @@ const MyProject = () => {
                 href="https://quiz-hunt.netlify.app/"
                 className="col-start-2"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                   <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -284,6 +302,7 @@ const MyProject = () => {
               <a
                 href="https://github.com/KawsarCoder/Quiz-Hunter"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
                   <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -334,6 +353,7 @@ const MyProject = () => {
             href="https://github.com/kawsarcoder"
             className="flex font-bold items-center"
             target="_blank"
+            rel="noreferrer"
           >
             <svg
               className="w-4 h-4 mr-2"

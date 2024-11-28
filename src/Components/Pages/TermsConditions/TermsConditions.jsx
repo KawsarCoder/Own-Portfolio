@@ -1,4 +1,3 @@
-import React from "react";
 import TermsConditionsImg from "../../../../public/Images/TermConditions.png";
 
 const TermsConditions = () => {

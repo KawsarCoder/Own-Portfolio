@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
 import blogImage from "../../../../public/Images/thirdBlog.png";
 import firstBlogImage from "../../../../public/Images/firstBlog.jpg";
 import secondBlogImage from "../../../../public/Images/ESSix.jpg";
 
+// eslint-disable-next-line no-unused-vars
 import Aos from "aos";
 import "aos/dist/aos.css";
 import DateCalculator from "./DateCalculator";
@@ -136,7 +136,7 @@ const MyBlog = () => {
             </h5>
 
             <p className="mb-3 font-normal text-bgColor dark:text-gray-400 text-justify">
-              In today's digitally driven era, web development plays a pivotal
+              In todays digitally driven era, web development plays a pivotal
               role in shaping our online experiences...
             </p>
             <div className="grid grid-cols-2 justify-between mb-5">

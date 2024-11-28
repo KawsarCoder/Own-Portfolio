@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./ErrorRoutes.css";
 import ErrorImage from "../../../../public/Images/ErrorImage.png";
@@ -7,13 +6,13 @@ const ErrorRoutes = () => {
   return (
     <section className="grid h-[100vh] justify-items-center">
       <div className="grid grid-cols-2 items-center">
-        <div class="">
+        <div>
           <h1 className="text-4xl font-bold m-0 text-[#333]">Page Not Found</h1>
           <p className="text-[1.5rem] text-[#777] mb-[2rem]">
-            Oops! The page you're looking for doesn't exist.
+            Oops! The page you are looking for does not exist.
           </p>
           <div
-            class="w-[150px] h-[150px] my-10 bg-[#ff5555] rounded-[50%]"
+            className="w-[150px] h-[150px] my-10 bg-[#ff5555] rounded-[50%]"
             id="animationEffect"
           ></div>
         </div>

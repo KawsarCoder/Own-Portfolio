@@ -1,4 +1,3 @@
-import React from "react";
 import ContactImage from "../../../../public/Images/ContactImage.png";
 import FormSubmit from "./FormSubmit";
 

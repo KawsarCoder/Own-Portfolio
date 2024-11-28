@@ -1,5 +1,5 @@
 // ProgressBar.js
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./ProgressBar.css"; // Create a CSS file for styling the progress bar
 
 const ProgressBar = () => {

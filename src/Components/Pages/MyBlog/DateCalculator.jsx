@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
+// eslint-disable-next-line react/prop-types
 const DateCalculator = ({ inputDate }) => {
   const [daysPassed, setDaysPassed] = useState(0);
 
   useEffect(() => {
     calculateDaysPassed();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputDate]);
 
   const calculateDaysPassed = () => {
