@@ -5,8 +5,8 @@ const MyContact = () => {
   return (
     // contact container
     <section data-aos="fade-up" className="max-w-[1140px] grid mx-auto">
-      <h2 className="text-center font-extrabold text-4xl uppercase text-mainText mt-20 mb-10">
-        Contact Me
+      <h2 className="text-center font-extrabold text-4xl capitalize text-mainText mt-20 mb-10">
+        Reach Out to Me
       </h2>
       {/* contact content  */}
       <div className="grid md:grid-cols-2 grid-cols-1 mb-20">

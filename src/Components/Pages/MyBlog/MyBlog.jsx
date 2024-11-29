@@ -10,8 +10,8 @@ import DateCalculator from "./DateCalculator";
 const MyBlog = () => {
   return (
     <section className="max-w-[1140px] grid mx-auto">
-      <h2 className="text-center font-extrabold text-4xl uppercase text-mainText mt-20 mb-10">
-        My Blogs
+      <h2 className="text-center font-extrabold text-4xl capitalize text-mainText mt-20 mb-10">
+        The Blog Corner
       </h2>
       {/* blogs container  */}
       <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center gap-7">

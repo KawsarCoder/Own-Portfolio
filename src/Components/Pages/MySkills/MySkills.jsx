@@ -11,9 +11,9 @@ const MySkills = () => {
       data-aos="fade-up"
       className="grid justify-center mb-10 mt-20 md:mt-10"
     >
-      <div className="text-center mb-10">
-        <h2 className="text-4xl uppercase font-extrabold bg-style text-mainText">
-          My Skills
+      <div className="text-center mb-10 ">
+        <h2 className="text-4xl capitalize font-extrabold bg-style text-mainText">
+          My Technical Arsenal
         </h2>
       </div>
       {/* my skill section tab  */}

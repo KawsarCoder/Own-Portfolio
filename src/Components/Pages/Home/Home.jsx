@@ -9,6 +9,8 @@ import MyContact from "../MyContact/MyContact";
 import Header from "../Header.jsx/Header";
 import Aos from "aos";
 import "aos/dist/aos.css";
+// import MyJourney from "../MyJourney/MyJourney";
+import MyResume from "./MyResume/MyResume";
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +22,8 @@ const Home = () => {
       <Header />
       <AboutMe />
       <MySkills />
+      {/* <MyJourney /> */}
+      <MyResume />
       <MyServices />
       <MyProject />
       {/* Testimonial pending  */}

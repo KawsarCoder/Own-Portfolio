@@ -3,8 +3,8 @@ const MyServices = () => {
     // service section
     <section data-aos="fade-up" className="max-w-[1140px] grid mx-auto mb-10">
       <div>
-        <h2 className="text-center uppercase font-extrabold text-4xl text-mainText mt-20 mb-10">
-          My Services
+        <h2 className="text-center capitalize font-extrabold text-4xl text-mainText mt-20 mb-10">
+          Solutions I Provide
         </h2>
       </div>
       {/* service content wrapper  */}
@@ -12,8 +12,8 @@ const MyServices = () => {
         <ol className="items-center sm:flex">
           {/* web design  */}
           <li className="relative mb-6 sm:mb-0">
-            <div className="flex items-center">
-              <div className="z-10 flex items-center mx-auto justify-center w-8 h-8 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-4 dark:ring-gray-900 shrink-0">
+            <div className="flex items-center ">
+              <div className="z-10 flex items-center mx-auto justify-center  w-8 h-8 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-4 dark:ring-gray-900 shrink-0">
                 <i className="fa-solid fa-wand-magic-sparkles mx-auto text-FourtColor text-lg"></i>
               </div>
               <div className="hidden sm:flex w-full bg-gradient-to-r from-FourtColor to-thirdColor h-1 dark:bg-gray-700"></div>

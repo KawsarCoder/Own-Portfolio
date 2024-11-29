@@ -61,7 +61,7 @@ const Header = () => {
             </a>
           </button>
           <span className="text-thirdColor font-bold md:text-3xl text-2xl">
-            Lets Follow Here :
+            Connect & Collaborate
           </span>
           <div className="py-4 mt-5 font-bold w-[60%] border-primary btn-style rounded-md flex text-primary justify-evenly">
             {/* facebook icon  */}

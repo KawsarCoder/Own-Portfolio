@@ -24,8 +24,8 @@ const AboutMe = () => {
         </div>
         {/* my about text  */}
         <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-4xl md:text-left text-center font-extrabold uppercase text-mainText tracking-tight dark:text-white">
-            About Me
+          <h5 className="mb-2 text-4xl md:text-left text-center font-extrabold capitalize text-mainText tracking-tight dark:text-white">
+            Getting to Know Me
           </h5>
           {/* about me text  */}
           <p className="mb-3 font-normal text-gray-500 text-justify dark:text-gray-400">

@@ -9,8 +9,9 @@ const MyProject = () => {
   return (
     // project section
     <section className="max-w-[1140px] grid mx-auto mb-20">
-      <h2 className="text-center uppercase font-extrabold text-4xl text-mainText mt-20 mb-10">
-        <div> My Projects</div>
+      <h2 className="text-center capitalize font-extrabold text-4xl text-mainText mt-20 mb-10">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        <div> Things I've Worked On</div>
       </h2>
       {/* projects content  */}
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-5">

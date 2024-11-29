@@ -14,8 +14,9 @@ export default {
       FourtColor: "#3AA6B9",
       fifthColor: "#ffd700",
       bgColor: "#EBF3FF",
-      mainText: "#ff5200",
+      mainText: "#31C48D",
     },
   },
+  // eslint-disable-next-line no-undef
   plugins: [require("flowbite/plugin")],
 };
