@@ -1,11 +1,100 @@
-import metaTubeImg from "../../../../public/Images/metaTube.png";
-import metaLearnImg from "../../../../public/Images/metaLearn.png";
-import carMerchantryImg from "../../../../public/Images/carMerchantry.png";
-import quizHuntImg from "../../../../public/Images/quizHunter.png";
+import metaTubeImg from "../../../../public/Images/metaTubeImg.png";
+import docProImg from "../../../../public/Images/docProImg.png";
+import metaLearnImg from "../../../../public/Images/metaLernImg.png";
+import carMerchantryImg from "../../../../public/Images/carMerchantryImg.png";
 import "./MyProject";
-import ImageScrollAnimation from "./ImageScrollAnimation/ImageScrollAnimation";
 
 const MyProject = () => {
+  const projectData = [
+    {
+      id: "1",
+      animatation: "flip-left",
+      imgUrl: docProImg,
+      liveLink: "https://docpro-app.vercel.app/",
+      clientLink: "https://github.com/KawsarCoder/DocPro-App",
+      serverLink: "https://github.com/KawsarCoder/DocPro-APP-Backend",
+      projectName: "DocPro App",
+      details:
+        "Book appointments with top doctors, specialists, and healthcare providers near you. Manage your health with ease - anytime.",
+      technology: [
+        "NextJs",
+        "Tailwind",
+        "Radix UI",
+        "ShadCN UI",
+        "Kende",
+        "Strapi",
+        "Axios",
+        "Vercel",
+        "Node.js",
+        "Render",
+        "Cloudinary",
+      ],
+    },
+    {
+      id: "2",
+      animatation: "flip-right",
+      imgUrl: metaTubeImg,
+      liveLink: "https://meta-tube-c8397.web.app/",
+      clientLink: "https://github.com/KawsarCoder/Meta-Tube-Client-Side",
+      serverLink: "https://github.com/KawsarCoder/Meta-Tube-server-Side",
+      projectName: "Meta Tube",
+      details:
+        " Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      technology: [
+        "CSS",
+        "React",
+        "Tailwind",
+        "Flowbit",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "Firebase",
+        "React-Toostify",
+        "Daisy UI",
+        "Vercel",
+      ],
+    },
+    {
+      id: "3",
+      animatation: "flip-left",
+      imgUrl: metaLearnImg,
+      liveLink: "https://meta-learn-5c198.web.app/",
+      clientLink: "https://github.com/KawsarCoder/Meta-Learn-Client-Side",
+      serverLink: "https://github.com/KawsarCoder/Meta-Learn-server-Side",
+      projectName: "Meta Learn",
+      details:
+        " We are provide best programming course for ever, if you want to join please visit course.",
+      technology: [
+        "CSS",
+        "React",
+        "Tailwind",
+        "Flowbit",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+      ],
+    },
+    {
+      id: "4",
+      animatation: "flip-right",
+      imgUrl: carMerchantryImg,
+      liveLink: "https://car-merchantry.web.app/",
+      clientLink: "https://github.com/KawsarCoder/Car-Merchantry-Client-Side",
+      serverLink: "https://github.com/KawsarCoder/Meta-Learn-server-Side",
+      projectName: "Car Merchantry",
+      details:
+        "Exclusive cars available here. We Provides service all over the world.",
+      technology: [
+        "CSS",
+        "React",
+        "Tailwind",
+        "Flowbit",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+      ],
+    },
+  ];
   return (
     // project section
     <section className="max-w-[1140px] grid mx-auto mb-20">
@@ -15,335 +104,69 @@ const MyProject = () => {
       </h2>
       {/* projects content  */}
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-5">
-        {/* meta tube container  */}
-        <div
-          data-aos="flip-left"
-          className="grid gap-5 overflow-hidden  md:grid-cols-3 grid-cols-1 justify-items-center items-center border-4 shadow-lg border-FourtColor rounded-lg md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          {/* meta tube image  */}
-          <div className="ml-10 border-4 rounded-lg">
-            <ImageScrollAnimation
-              imageUrl={metaTubeImg}
-              alt="Scrolling Image"
-            />
-          </div>
-          {/* meta tube details  */}
-          <div className="flex lg:ml-2 flex-col md:col-span-2 justify-between p-4 leading-normal">
-            <div className="grid grid-cols-3 gap-2">
-              <a
-                href="https://meta-tube-c8397.web.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Live Link
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Meta-Tube-Client-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Client Repo
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Meta-Tube-server-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Server Repo
-                  </span>
-                </button>
-              </a>
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              Meta Tube
-            </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <div>
-              <h5 className="font-bold text-xl text-thirdColor">
-                Technologies:
-              </h5>
-              <div className="flex flex-wrap gap-2 text-primary">
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  CSS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  React
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Tailwind
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Flowbit
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  NodeJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  ExpressJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  MongoDB
-                </span>
+        {projectData.map((data) => (
+          <div key={data?.id}>
+            {/* Project container  */}
+            <div
+              data-aos={data.animatation}
+              className="grid gap-5 overflow-hidden  md:grid-cols-3 grid-cols-1 justify-items-center items-center border-4 shadow-lg border-FourtColor rounded-lg md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            >
+              {/* Project image  */}
+              <div className="ml-10 border-4 rounded-lg w-full ">
+                <img src={data?.imgUrl} alt="Scrolling Image" />
+              </div>
+              {/* Project details  */}
+              <div className="flex lg:ml-2 flex-col md:col-span-2 justify-between p-4 leading-normal">
+                <div className="grid grid-cols-3 gap-2">
+                  <a href={data.liveLink} target="_blank" rel="noreferrer">
+                    <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                      <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Live Link
+                      </span>
+                    </button>
+                  </a>
+                  <a href={data.clientLink} target="_blank" rel="noreferrer">
+                    <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                      <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Client Repo
+                      </span>
+                    </button>
+                  </a>
+                  <a href={data.serverLink} target="_blank" rel="noreferrer">
+                    <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+                      <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Server Repo
+                      </span>
+                    </button>
+                  </a>
+                </div>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
+                  {data.projectName}
+                </h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  {data.details}
+                </p>
+                <div>
+                  <h5 className="font-bold text-xl text-thirdColor">
+                    Technologies:
+                  </h5>
+                  <div className="flex flex-wrap gap-2 text-primary">
+                    {data?.technology.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* meta learn container  */}
-        <div
-          data-aos="flip-right"
-          className="flex flex-col items-center border-4 shadow-lg border-FourtColor rounded-lg md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          {/* meta learn image  */}
-          <div className="ml-2 border-4 rounded-lg">
-            <ImageScrollAnimation
-              imageUrl={metaLearnImg}
-              alt="Scrolling Image"
-            />
-          </div>
-          {/* meta learn details  */}
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <div className="grid grid-cols-3 gap-2">
-              <a
-                href="https://meta-learn-5c198.web.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Live Link
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Meta-Learn-Client-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Client Repo
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Meta-Learn-server-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Server Repo
-                  </span>
-                </button>
-              </a>
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              Meta Learn
-            </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <div>
-              <h5 className="font-bold text-xl text-thirdColor">
-                Technologies:
-              </h5>
-              <div className="flex flex-wrap gap-2 text-primary">
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  CSS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  React
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Tailwind
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Flowbit
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  NodeJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  ExpressJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  MongoDB
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* car merchantry container */}
-        <div
-          data-aos="flip-left"
-          className="flex flex-col items-center border-4 shadow-lg border-FourtColor rounded-lg md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          {/* car merchantry image  */}
-          <div className="ml-2 border-4 rounded-lg">
-            <ImageScrollAnimation
-              imageUrl={carMerchantryImg}
-              alt="Scrolling Image"
-            />
-          </div>
-          {/* car merchantry details  */}
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <div className="grid grid-cols-3 gap-2 ">
-              <a
-                href="https://car-merchantry.web.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Live Link
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Car-Merchantry-Client-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Client Repo
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Meta-Learn-server-Side"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-                  <span className="relative px-1 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Server Repo
-                  </span>
-                </button>
-              </a>
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              Car Merchantry
-            </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <div>
-              <h5 className="font-bold text-xl text-thirdColor">
-                Technologies:
-              </h5>
-              <div className="flex flex-wrap gap-2 text-primary">
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  CSS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  React
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Tailwind
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Flowbit
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  NodeJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  ExpressJS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  MongoDB
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* quiz hunt container  */}
-        <div
-          data-aos="flip-right"
-          className="flex flex-col items-center border-4 shadow-lg border-FourtColor rounded-lg md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          {/* quiz hunt image  */}
-          <div className="ml-2 border-4 rounded-lg">
-            <ImageScrollAnimation
-              imageUrl={quizHuntImg}
-              alt="Scrolling Image"
-            />
-          </div>
-          {/* quiz hunt details  */}
-          <div className="flex flex-col justify-between p-4 leading-normal">
-            <div className="grid grid-cols-3 gap-2 ">
-              <a
-                href="https://quiz-hunt.netlify.app/"
-                className="col-start-2"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Live Link
-                  </span>
-                </button>
-              </a>
-              <a
-                href="https://github.com/KawsarCoder/Quiz-Hunter"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button className="relative inline-flex shadow-md items-center justify-center p-1 mb-2 overflow-hidden text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                  <span className="relative px-4 text-sm py-1 transition-all ease-in duration-75 bg-bgColor dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Git Repo
-                  </span>
-                </button>
-              </a>
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              Quiz Hunter
-            </h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <div>
-              <h5 className="font-bold text-xl text-thirdColor">
-                Technologies:
-              </h5>
-              <div className="flex flex-wrap gap-2 text-primary">
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  CSS
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  React
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Tailwind
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  Flowbit
-                </span>
-                <span className="shadow-lg p-3 font-bold rounded-full hover:bg-gradient-to-r from-FourtColor to-thirdColor hover:text-bgColor">
-                  JS
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+
       {/* github button wrapper */}
       <div className="grid justify-center">
         <button
