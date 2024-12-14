@@ -1,4 +1,4 @@
-import Navbar from "../Pages/Navbar/Navbar";
+// import Navbar from "../Pages/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "../Pages/Footer/Footer";
 import ProgressBar from "../Pages/ProgressBar/ProgressBar";
@@ -6,7 +6,7 @@ import ProgressBar from "../Pages/ProgressBar/ProgressBar";
 const Layout = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Outlet />
       <Footer />
       <ProgressBar />

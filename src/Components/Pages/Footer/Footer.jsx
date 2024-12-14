@@ -1,5 +1,5 @@
 import logoImage from "../../../../public/Images/Logo.png";
-import Resume from "../../../../public/Images/WebDeveloper.pdf";
+import Resume from "../../../../public/Images/FullStackResume.pdf";
 import Certificate from "../../../../public/Images/WebCertificate.pdf";
 import { Link } from "react-router-dom";
 

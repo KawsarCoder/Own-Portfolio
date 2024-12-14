@@ -16,7 +16,7 @@ const Header = () => {
         {/* My name  */}
         <h1 className="text-xl font-bold text-primary my-2">
           Its Me,{" "}
-          <span className="text-FourtColor md:text-4xl text-3xl">
+          <span className="bg-gradient-to-r from-primary to-thirdColor md:text-4xl text-3xl inline-block text-transparent bg-clip-text">
             Md. Kawsar
           </span>
         </h1>

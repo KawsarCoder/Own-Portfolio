@@ -1,5 +1,5 @@
 import secondImage from "../../../../public/Images/SecondImage.png";
-import Resume from "../../../../public/Images/WebDeveloper.pdf";
+import Resume from "../../../../public/Images/FullStackResume.pdf";
 import NumberCounter from "./NumberCounter/NumberCounter";
 
 const AboutMe = () => {
