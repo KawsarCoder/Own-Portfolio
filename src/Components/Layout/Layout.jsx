@@ -2,11 +2,12 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Pages/Footer/Footer";
 import ProgressBar from "../Pages/ProgressBar/ProgressBar";
+import Navbar from "../Nabvar";
 
 const Layout = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
       <Footer />
       <ProgressBar />

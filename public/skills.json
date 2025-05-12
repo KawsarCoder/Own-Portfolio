@@ -1,178 +1,94 @@
 [
   {
-    "category": "Frontend",
-    "img": "./Images/HTML.png",
-    "experienceLevel": "Expert"
+    "name": "JavaScript",
+    "img": "./Images/JS.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/css.png",
-    "experienceLevel": "Expert"
+    "name": "ReactJs",
+    "img": "./Images/React.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/Bootsrap.png",
-    "experienceLevel": "Expert"
+    "name": "Redux",
+    "img": "./Images/redux.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/JS.png",
-    "experienceLevel": "Intermediate"
+    "name": "Nextjs",
+    "img": "./Images/nextjs.svg"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/React.png",
-    "experienceLevel": "Intermediate"
+    "name": "NodeJs",
+    "img": "./Images/NodeJS.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/tailwind.svg",
-    "experienceLevel": "Expert"
+    "name": "Expressjs",
+    "img": "./Images/exprss.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/MaterialUI.png",
-    "experienceLevel": "Expert"
+    "name": "MongoDB",
+    "img": "./Images/mongoDB.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/Flowbit.png",
-    "experienceLevel": "Expert"
+    "name": "Python",
+    "img": "./Images/python.png"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/redux.png",
-    "experienceLevel": "Intermediate"
+    "name": "TypeScript",
+    "img": "./Images/Typescript.svg"
   },
   {
-    "category": "Frontend",
-    "img": "./Images/nextjs.svg",
-    "experienceLevel": "Intermediate"
+    "name": "Mongoose",
+    "img": "./Images/mongoose.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/NodeJS.png",
-    "experienceLevel": "Intermediate"
+    "name": "PostgreSQL",
+    "img": "./Images/postgreSQL.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/exprss.png",
-    "experienceLevel": "Intermediate"
+    "name": "Prisma",
+    "img": "./Images/prisma.svg"
   },
   {
-    "category": "Backend",
-    "img": "./Images/mongoDB.png",
-    "experienceLevel": "Intermediate"
+    "name": "GraphQl",
+    "img": "./Images/graphql.svg"
   },
   {
-    "category": "Backend",
-    "img": "./Images/python.png",
-    "experienceLevel": "Beginner"
+    "name": "Docker",
+    "img": "./Images/docker.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/Typescript.svg",
-    "experienceLevel": "Intermediate"
+    "name": "Github",
+    "img": "./Images/github.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/mongoose.png",
-    "experienceLevel": "Intermediate"
+    "name": "VS Code",
+    "img": "./Images/vscode.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/postgreSQL.png",
-    "experienceLevel": "Beginner"
+    "name": "Firebase",
+    "img": "./Images/firebase.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/prisma.svg",
-    "experienceLevel": "Intermediate"
+    "name": "Vercel",
+    "img": "./Images/vercel.png"
   },
   {
-    "category": "Backend",
-    "img": "./Images/graphql.svg",
-    "experienceLevel": "Beginner"
+    "name": "Tailwind",
+    "img": "./Images/tailwind.svg"
   },
   {
-    "category": "Backend",
-    "img": "./Images/docker.png",
-    "experienceLevel": "Beginner"
+    "name": "Ghatgpt",
+    "img": "./Images/chatgpt.png"
   },
   {
-    "category": "Tools",
-    "img": "./Images/github.png",
-    "experienceLevel": "Expert"
+    "name": "Wordpress",
+    "img": "./Images/Wordpress.svg"
   },
   {
-    "category": "Tools",
-    "img": "./Images/canva.png",
-    "experienceLevel": "Expert"
+    "name": "Postman",
+    "img": "./Images/postman.svg"
   },
   {
-    "category": "Tools",
-    "img": "./Images/netlify.png",
-    "experienceLevel": "Expert"
-  },
-
-  {
-    "category": "Tools",
-    "img": "./Images/vscode.png",
-    "experienceLevel": "Expert"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/firebase.png",
-    "experienceLevel": "Expert"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/vercel.png",
-    "experienceLevel": "Expert"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/chatgpt.png",
-    "experienceLevel": "Expert"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/bard.png",
-    "experienceLevel": "Expert"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/pycharm.png",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/Wordpress.svg",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/WooCommerce.svg",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/elementor.png",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/Notion.png",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/postman.svg",
-    "experienceLevel": "Intermediate"
-  },
-  {
-    "category": "Tools",
-    "img": "./Images/framerMotion.svg",
-    "experienceLevel": "Intermediate"
+    "name": "Framer Motion",
+    "img": "./Images/framerMotion.svg"
   }
 ]

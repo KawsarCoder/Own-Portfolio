@@ -13,7 +13,7 @@ export default {
       thirdColor: "#31C48D",
       FourtColor: "#3AA6B9",
       fifthColor: "#ffd700",
-      bgColor: "#EBF3FF",
+      bgColor: "#150023",
       mainText: "#31C48D",
     },
   },
