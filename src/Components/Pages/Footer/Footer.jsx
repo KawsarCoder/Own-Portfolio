@@ -1,201 +1,111 @@
-import logoImage from "../../../../public/Images/Logo.png";
-import Resume from "../../../../public/Images/FullStackResume.pdf";
-import Certificate from "../../../../public/Images/WebCertificate.pdf";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
-  const handleDownload = () => {
-    const fileUrl = Resume;
-    const anchor = document.createElement("a");
-    anchor.href = fileUrl;
-    anchor.download = "MD-Kawsar-Resume.pdf";
-    anchor.click();
-  };
-  const handleCertificate = () => {
-    const fileUrl = Certificate;
-    const anchor = document.createElement("a");
-    anchor.href = fileUrl;
-    anchor.download = "Web-Development-Certificate.pdf";
-    anchor.click();
-  };
   return (
-    <section className="mt-20 w-[100%]">
-      <div>
-        <footer className="bg-gradient-to-r from-FourtColor to-thirdColor dark:bg-gray-900">
-          <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div className="md:flex md:justify-between">
-              <div className="mb-6 md:mb-0 grid justify-items-center">
-                <a href="/" className="">
-                  <img
-                    src={logoImage}
-                    className="h-20 mx-auto self-center"
-                    alt="MD Kawsar"
-                  />
-                  <span className="self-center text-2xl text-primary font-semibold whitespace-nowrap dark:text-white">
-                    MD Kawsar
-                  </span>
-                </a>
-              </div>
-              <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">
-                    Documents
-                  </h2>
-                  <ul className="text-bgColor dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <button
-                        className="hover:underline"
-                        onClick={handleCertificate}
-                      >
-                        Web Development
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        className="hover:underline"
-                        onClick={handleDownload}
-                      >
-                        Resume
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">
-                    Follow Me
-                  </h2>
-                  <ul className="text-bgColor dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <a
-                        href="https://github.com/kawsarcoder"
-                        target="_blank"
-                        className="hover:underline "
-                        rel="noreferrer"
-                      >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/in/mdkawsar1403/"
-                        target="_blank"
-                        className="hover:underline"
-                        rel="noreferrer"
-                      >
-                        LinkedIn
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">
-                    Legal
-                  </h2>
-                  <ul className="text-bgColor dark:text-gray-400 font-medium">
-                    <li className="mb-4">
-                      <Link to={"PrivacyPoliciy"} className="hover:underline">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={"TermsConditions"} className="hover:underline">
-                        Terms &amp; Conditions
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div className="sm:flex sm:items-center sm:justify-between">
-              <span className="text-sm text-primary sm:text-center dark:text-gray-400">
-                © 2025{" "}
-                <a
-                  href="https://www.linkedin.com/in/mdkawsar1403/"
-                  target="_blank"
-                  className="hover:underline"
-                  rel="noreferrer"
-                >
-                  MD Kawsar
-                </a>
-                . All Rights Reserved.
-              </span>
-              <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                {/* facebook icon  */}
-                <a
-                  href="https://web.facebook.com/mohammod.kawsar.946/"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-facebook"></i>
-                  </span>
-                </a>
+    <motion.div
+      className="mt-20 pt-10 border-t border-[#9909CD]/10 text-center relative z-10 bg-gradient-to-br from-[#1F0C35] to-[#150324] shadow-lg pb-16"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+    >
+      <div className="max-w-md mx-auto">
+        <motion.div
+          className="flex justify-center space-x-6 mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <motion.a
+            href="https://github.com/kawsarcoder"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            whileHover={{ y: -3, scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9909CD"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </motion.a>
 
-                {/* instagram icon  */}
-                <a
-                  href="https://www.instagram.com/code.with.kawsar/"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-instagram"></i>
-                  </span>
-                </a>
+          <motion.a
+            href="https://www.linkedin.com/in/mdkawsar1403/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            whileHover={{ y: -3, scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9909CD"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </motion.a>
 
-                {/* github icon  */}
-                <a
-                  href="https://github.com/kawsarcoder"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1.5 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-github"></i>
-                  </span>
-                </a>
-
-                {/* linkedIn Icon  */}
-                <a
-                  href="https://www.linkedin.com/in/mdkawsar1403/"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-2 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-linkedin-in"></i>
-                  </span>
-                </a>
-                {/* Discord Icon  */}
-                <a
-                  href="https://discord.com/channels/@md.kawsar"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-discord"></i>
-                  </span>
-                </a>
-                {/* Youtube Icon  */}
-                <a
-                  href="https://youtube.com/@code.with.kawsar"
-                  target="_blank"
-                  className="border-primary border-2 rounded-full  w-[30px] h-[30px] px-1 py-0.5 hover:bg-gradient-to-r from-FourtColor to-secondary"
-                  rel="noreferrer"
-                >
-                  <span>
-                    <i className="fa-brands text-md text-primary fa-youtube"></i>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+          <motion.a
+            href="mailto:md.kawsar.developer@gmail.com"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            whileHover={{ y: -3, scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9909CD"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </motion.a>
+        </motion.div>
       </div>
-    </section>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
+        <p className="text-gray-300 text-sm font-medium">
+          &copy; {new Date().getFullYear()}{" "}
+          <span className="text-[#9909CD]">Md Kawsar</span> · All Rights
+          Reserved
+        </p>
+        <p className="text-gray-400 text-sm mt-1">
+          Software Engineer & Full-Stack Web Developer
+        </p>
+      </motion.div>
+    </motion.div>
   );
 };
 

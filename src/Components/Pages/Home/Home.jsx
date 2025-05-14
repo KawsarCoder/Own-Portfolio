@@ -4,7 +4,7 @@ import AboutMe from "../AboutMe/AboutMe";
 import MySkills from "../MySkills/MySkills";
 import MyServices from "../MyServices/MyServices";
 import MyProject from "../MyProject/MyProject";
-import MyBlog from "../MyBlog/MyBlog";
+// import MyBlog from "../MyBlog/MyBlog";
 import MyContact from "../MyContact/MyContact";
 import Header from "../Header.jsx/Header";
 import Aos from "aos";
@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
   return (
     // Top section
-    <section className="max-w-[1140px] grid mx-auto">
+    <section className="max-w-[1200px] grid mx-auto">
       <Header />
       <AboutMe />
       <MySkills />
@@ -27,7 +27,7 @@ const Home = () => {
       <MyServices />
       <MyProject />
       {/* Testimonial pending  */}
-      <MyBlog />
+      {/* <MyBlog /> */}
       <MyContact />
     </section>
   );

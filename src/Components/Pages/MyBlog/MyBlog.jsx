@@ -1,177 +1,145 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 import blogImage from "../../../../public/Images/thirdBlog.png";
-import firstBlogImage from "../../../../public/Images/firstBlog.jpg";
+import typescriptBlog from "../../../../public/Images/typescriptBlog.jpg";
+import databaseBlog from "../../../../public/Images/databaseBlog.jpg";
 import secondBlogImage from "../../../../public/Images/ESSix.jpg";
-
+import { motion } from "framer-motion";
+import { useState } from "react";
 // eslint-disable-next-line no-unused-vars
-import Aos from "aos";
-import "aos/dist/aos.css";
-import DateCalculator from "./DateCalculator";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
+// import DateCalculator from "./DateCalculator";
+
+const BlogCard = ({ title, summary, image, date }) => {
+  const [rotate, setRotate] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * 10;
+    const rotateY = ((x - centerX) / centerX) * -10;
+
+    setRotate({ x: rotateX, y: rotateY });
+  };
+
+  const handleMouseLeave = () => {
+    setRotate({ x: 0, y: 0 });
+  };
+
+  return (
+    <motion.div
+      className="relative w-80 h-96 rounded-xl bg-[#1F0C34] hover:bg-gradient-to-br from-[#350B4F] to-[#1F0C34] p-1 group cursor-pointer shadow-xl"
+      style={{ transformStyle: "preserve-3d" }}
+      animate={{
+        rotateX: rotate.x,
+        rotateY: rotate.y,
+        transition: { type: "spring", stiffness: 200, damping: 15 },
+      }}
+      whileHover={{ scale: 1.05 }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-10 blur-lg rounded-xl z-0"></div>
+
+      {/* Cube effect inner layer */}
+      <div className="relative z-10 bg-[#ffffff08] backdrop-blur-xl border border-white/10 rounded-xl h-full w-full p-5 flex flex-col justify-between transition-all duration-300 group-hover:shadow-2xl">
+        {/* Image block */}
+        <div className="w-full h-32 overflow-hidden rounded-lg">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="mt-3 flex flex-col gap-1 text-white">
+          <span className="text-xs text-purple-300">{date}</span>
+          <h3 className="text-lg font-bold leading-relaxed">{title}</h3>
+          <p className="text-sm text-gray-200 line-clamp-3">{summary}</p>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-2 text-right">
+          <span className="text-sm text-purple-200 hover:underline">
+            Read more →
+          </span>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
 const MyBlog = () => {
+  const blogs = [
+    {
+      title: "All about Programming World",
+      summary:
+        "Programming has become an essential part of our lives as technology continues to advance.",
+      image: blogImage,
+      date: "May 10, 2025",
+    },
+    {
+      title: "Magic of Web Development",
+      summary:
+        "In todays digitally driven era, web development plays a pivotal role in shaping our online experiences",
+      image: secondBlogImage,
+      date: "Jan 15, 2023.",
+    },
+    {
+      title: "Why TypeScript is the Future",
+      summary:
+        "Explore why TypeScript is gaining traction in modern web development.",
+      image: secondBlogImage,
+      date: "May 13, 2025",
+    },
+    {
+      title: "ডাটাবেস (Database) হলো মাছ ধরার মতো!",
+      summary:
+        "ডাটাবেস ব্যবহার করা মানে বিশাল তথ্যের সমুদ্র থেকে বুদ্ধি, কৌশল আর ধৈর্য দিয়ে আপনার প্রয়োজনের তথ্য (মাছ) বের করে আনা। ভালো নেট মানে ভালো কোয়েরি — আর ভালো কোয়েরি মানেই সফল ডেটা ক্যাচ!",
+      image: databaseBlog,
+      date: "May 14, 2025",
+    },
+    {
+      title: "TypeScript এ Polymorphism মানে গিরগিটির মতো!",
+      summary:
+        "TypeScript এর Polymorphism মানে হচ্ছে গিরগিটির মতো, নিজেকে বদলাতে পারে, কিন্তু নিজের পরিচয় হারায় না!",
+      image: typescriptBlog,
+      date: "May 10, 2025",
+    },
+  ];
+
   return (
-    <section className="max-w-[1140px] grid mx-auto">
-      <h2 className="text-center font-extrabold text-4xl capitalize text-mainText mt-20 mb-10">
-        The Blog Corner
-      </h2>
-      {/* blogs container  */}
-      <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center gap-7">
-        {/* first blog  */}
-        <div
-          data-aos="flip-left"
-          className="max-w-xs borde rounded-lg bg-gradient-to-r from-FourtColor to-thirdColor shadow-lg dark:bg-gray-800 dark:border-gray-700"
-        >
-          {/* first blog image wrapper */}
-          <div className="relative grid justify-center">
-            <img className="rounded" src={firstBlogImage} alt="" />
-          </div>
-          {/* first blog content  */}
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              All about Programming World.
-            </h5>
-
-            <p className="mb-3 font-normal text-bgColor dark:text-gray-400 text-justify">
-              Programming has become an essential part of our lives as
-              technology continues to advance. From smartphones to...
-            </p>
-            <div className="grid grid-cols-2 justify-between mb-5">
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-file-pen"></i>
-                <h5>Md Kawsar</h5>
-              </span>
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-clock"></i>
-                <DateCalculator inputDate={"2023-01-15"} />
-              </span>
-            </div>
-            <a
-              href="https://www.linkedin.com/posts/mdkawsar1403_programming-activity-7029446324567609345-_uxz?utm_source=share&utm_medium=member_desktop"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:hover:bg-gradient-to-r from-secondary to-thirdColor hover:text-bgColor focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Read more
-              <svg
-                className="w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        {/* second blog  */}
-        <div
-          data-aos="flip-up"
-          className="max-w-xs borde rounded-lg bg-gradient-to-r from-FourtColor to-thirdColor shadow-lg dark:bg-gray-800 dark:border-gray-700"
-        >
-          {/* second blog image wrapper */}
-          <div className="relative grid justify-center">
-            <img className="rounded" src={secondBlogImage} alt="" />
-          </div>
-
-          <div className="p-5">
-            <a href="https://www.linkedin.com/posts/mdkawsar1403_new-features-in-ecmascript-2023-ecmascript-activity-7090645677193494528-O7dN?utm_source=share&utm_medium=member_desktop">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-                New features in ECMAScript
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-bgColor dark:text-gray-400 text-justify">
-              ECMAScript 2023, due in June, will include several new features,
-              including: Methods for searching and...
-            </p>
-            <div className="grid grid-cols-2 justify-between mb-5">
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-file-pen"></i>
-                <h5>Md Kawsar</h5>
-              </span>
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-clock"></i>
-                <DateCalculator inputDate={"2023-07-28"} />
-              </span>
-            </div>
-            <a
-              href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:hover:bg-gradient-to-r from-secondary to-thirdColor hover:text-bgColor focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Read more
-              <svg
-                className="w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        {/* third blog  */}
-        <div
-          data-aos="flip-right"
-          className="max-w-xs borde rounded-lg bg-gradient-to-r from-FourtColor to-thirdColor shadow-lg dark:bg-gray-800 dark:border-gray-700"
-        >
-          {/* third blog image wrapper */}
-          <div className="relative grid justify-center">
-            <img className="rounded" src={blogImage} alt="" />
-          </div>
-          {/* third blog content  */}
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white">
-              Magic of Web Development
-            </h5>
-
-            <p className="mb-3 font-normal text-bgColor dark:text-gray-400 text-justify">
-              In todays digitally driven era, web development plays a pivotal
-              role in shaping our online experiences...
-            </p>
-            <div className="grid grid-cols-2 justify-between mb-5">
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-file-pen"></i>
-                <h5>Md Kawsar</h5>
-              </span>
-              <span className="flex items-center gap-2 font-bold text-primary">
-                <i className="fa-solid fa-clock"></i>
-                <DateCalculator inputDate={"2023-07-28"} />
-              </span>
-            </div>
-            <a
-              href="https://www.linkedin.com/posts/mdkawsar1403_webdevelopment-technology-innovation-activity-7090654217022935040-GZHN?utm_source=share&utm_medium=member_desktop"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-gradient-to-r from-secondary to-thirdColor hover:text-bgColor focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Read more
-              <svg
-                className="w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
+    <section className="min-h-screen pt-32 pb-16 grid justify-items-center ">
+      <motion.div
+        className="relative z-10 mb-16 grid justify-center"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-center font-['Space_Grotesk'] text-4xl font-bold text-white inline-block relative">
+          <span className="relative z-10">Let's Connect</span>
+          <motion.span
+            className="absolute bottom-1 left-0 w-full h-3 bg-[#9909CD] -z-10"
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          />
+        </h2>
+      </motion.div>
+      <div className="pb-10 px-6 grid grid-cols-3 max-w-[1080px] container items-start gap-12">
+        {blogs.map((blog, i) => (
+          <BlogCard key={i} {...blog} />
+        ))}
       </div>
     </section>
   );
