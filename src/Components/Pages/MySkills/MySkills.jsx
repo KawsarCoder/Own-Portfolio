@@ -19,7 +19,7 @@ const MySkills = () => {
   return (
     <section
       id="skills"
-      className=" px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative"
+      className=" px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative mt-20 md:mt-0"
     >
       {/* Animated background elements */}
       <motion.div

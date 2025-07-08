@@ -57,10 +57,10 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center relative overflow-hidden"
+      className="h-screen flex items-center justify-center relative mt-[320px] md:mt-0"
     >
-      <div className="absolute top-0 left-0 w-24 h-24 bg-[#9909CD] opacity-5 rounded-full blur-xl"></div>
-      <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#9909CD] opacity-5 rounded-full blur-xl"></div>
+      <div className="absolute top-0 left-0 w-24 h-24 bg-[#9B87F5] opacity-5 rounded-full blur-xl"></div>
+      <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#9B87F5] opacity-5 rounded-full blur-xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -71,7 +71,7 @@ const Header = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-xl md:text-5xl lg:text-6xl font-bold mb-4 text-white"
+              className="md:mt-0 mt-12 text-2xl md:text-5xl lg:text-6xl font-bold mb-4 text-white"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -87,7 +87,7 @@ const Header = () => {
                   phrases={phrases}
                   typingSpeed={100}
                 /> */}
-                <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-[#8008AF] bg-clip-text text-transparent lg:text-4xl text-md font-bold">
+                <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-[#8008AF] bg-clip-text text-transparent lg:text-4xl text-2xl font-bold">
                   <Typewriter
                     options={{
                       strings: [
@@ -190,7 +190,7 @@ const Header = () => {
           </motion.div>
 
           <motion.div
-            className="relative flex justify-center items-center "
+            className="relative flex justify-center items-center mt-20 mb-96 md:mt-0 md:mb-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}

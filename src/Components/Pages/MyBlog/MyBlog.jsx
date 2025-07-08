@@ -3,7 +3,7 @@
 import blogImage from "../../../../public/Images/thirdBlog.png";
 import typescriptBlog from "../../../../public/Images/typescriptBlog.jpg";
 import databaseBlog from "../../../../public/Images/databaseBlog.jpg";
-import secondBlogImage from "../../../../public/Images/ESSix.jpg";
+import firstBlogImage from "../../../../public/Images/thirdBlog.jpg";
 import { motion } from "framer-motion";
 import { useState } from "react";
 // eslint-disable-next-line no-unused-vars
@@ -11,7 +11,7 @@ import { useState } from "react";
 // import "aos/dist/aos.css";
 // import DateCalculator from "./DateCalculator";
 
-const BlogCard = ({ title, summary, image, date }) => {
+const BlogCard = ({ title, summary, image, date, url }) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -68,9 +68,14 @@ const BlogCard = ({ title, summary, image, date }) => {
 
         {/* CTA */}
         <div className="mt-2 text-right">
-          <span className="text-sm text-purple-200 hover:underline">
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm text-purple-200 hover:underline"
+          >
             Read more →
-          </span>
+          </a>
         </div>
       </div>
     </motion.div>
@@ -85,20 +90,15 @@ const MyBlog = () => {
         "Programming has become an essential part of our lives as technology continues to advance.",
       image: blogImage,
       date: "May 10, 2025",
+      url: "https://www.linkedin.com/posts/mdkawsar1403_programming-activity-7029446324567609345-_uxz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-mU7cB3q7O1MTRPLVTs90Tx1j2xfcSqyk",
     },
     {
       title: "Magic of Web Development",
       summary:
         "In todays digitally driven era, web development plays a pivotal role in shaping our online experiences",
-      image: secondBlogImage,
+      image: firstBlogImage,
       date: "Jan 15, 2023.",
-    },
-    {
-      title: "Why TypeScript is the Future",
-      summary:
-        "Explore why TypeScript is gaining traction in modern web development.",
-      image: secondBlogImage,
-      date: "May 13, 2025",
+      url: "https://www.linkedin.com/posts/mdkawsar1403_webdevelopment-technology-innovation-activity-7090654217022935040-GZHN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-mU7cB3q7O1MTRPLVTs90Tx1j2xfcSqyk",
     },
     {
       title: "ডাটাবেস (Database) হলো মাছ ধরার মতো!",
@@ -106,6 +106,7 @@ const MyBlog = () => {
         "ডাটাবেস ব্যবহার করা মানে বিশাল তথ্যের সমুদ্র থেকে বুদ্ধি, কৌশল আর ধৈর্য দিয়ে আপনার প্রয়োজনের তথ্য (মাছ) বের করে আনা। ভালো নেট মানে ভালো কোয়েরি — আর ভালো কোয়েরি মানেই সফল ডেটা ক্যাচ!",
       image: databaseBlog,
       date: "May 14, 2025",
+      url: "https://www.linkedin.com/posts/mdkawsar1403_%E0%A6%A1%E0%A6%9F%E0%A6%AC%E0%A6%B8-database-%E0%A6%B9%E0%A6%B2-%E0%A6%AE%E0%A6%9B-%E0%A6%A7%E0%A6%B0%E0%A6%B0-%E0%A6%AE%E0%A6%A4-%E0%A6%AD%E0%A6%AC%E0%A6%A8-activity-7328270290143064064-VOAx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-mU7cB3q7O1MTRPLVTs90Tx1j2xfcSqyk",
     },
     {
       title: "TypeScript এ Polymorphism মানে গিরগিটির মতো!",
@@ -113,6 +114,7 @@ const MyBlog = () => {
         "TypeScript এর Polymorphism মানে হচ্ছে গিরগিটির মতো, নিজেকে বদলাতে পারে, কিন্তু নিজের পরিচয় হারায় না!",
       image: typescriptBlog,
       date: "May 10, 2025",
+      url: "https://www.linkedin.com/posts/mdkawsar1403_typescript-polymorphism-programming-activity-7326998834117574656-WAqi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-mU7cB3q7O1MTRPLVTs90Tx1j2xfcSqyk",
     },
   ];
 
@@ -128,7 +130,7 @@ const MyBlog = () => {
         <h2 className="text-center font-['Space_Grotesk'] text-4xl font-bold text-white inline-block relative">
           <span className="relative z-10">Let's Connect</span>
           <motion.span
-            className="absolute bottom-1 left-0 w-full h-3 bg-[#9909CD] -z-10"
+            className="absolute bottom-1 left-0 w-full h-3 bg-[#9B87F5] -z-10"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             viewport={{ once: true }}

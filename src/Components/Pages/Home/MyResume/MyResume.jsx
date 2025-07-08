@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
 /* eslint-disable react/no-unescaped-entities */
+import { motion } from "framer-motion";
 const MyResume = () => {
   return (
     <section
       id="resume"
-      className="pt-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative"
+      className="pt-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative mt-20 md:mt-0"
     >
       <div className="absolute top-0 left-0 w-24 h-24 bg-[#9909CD] opacity-5 rounded-full blur-xl"></div>
       <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#9909CD] opacity-5 rounded-full blur-xl"></div>
@@ -51,21 +51,21 @@ const MyResume = () => {
             </h3>
 
             <div className="pl-4 border-l-2 border-[#9909CD]/30">
-              <h3 className="font-['Space_Grotesk'] text-xl text-[#9909CD]  font-semibold">
+              <h3 className="font-['Space_Grotesk'] text-xl text-[#9B87F5]  font-semibold">
                 BSc in Computer Science & Engineering
               </h3>
               <p className=" text-white font-medium">Uttara University</p>
               <p className="text-gray-400 mb-6">2025-Running</p>
-              <h3 className="font-['Space_Grotesk'] text-xl text-[#9909CD]  font-semibold">
+              <h3 className="font-['Space_Grotesk'] text-xl text-[#9B87F5]  font-semibold">
                 Diploma in Engineering
               </h3>
-              <p className=" text-[#9909CD] font-medium">Computer Technology</p>
+              <p className=" text-[#9B87F5] font-medium">Computer Technology</p>
               <p className=" text-white font-medium">
                 Chattogram Polytechnic Institute
               </p>
               <p className="text-gray-400">CGPA: 3.61 out of 4</p>
               <p className="text-gray-400 mb-6">Year: 2020-2024</p>
-              <h3 className="font-['Space_Grotesk'] text-xl text-[#9909CD]  font-semibold">
+              <h3 className="font-['Space_Grotesk'] text-xl text-[#9B87F5]  font-semibold">
                 Secondary School Certificate
               </h3>
               <p className=" text-white font-medium">
@@ -117,12 +117,12 @@ const MyResume = () => {
                   <h4 className="text-white font-semibold text-lg">
                     Digital Project Manager
                   </h4>
-                  <div className="bg-[#9909CD]/10 text-[#9909CD] text-sm px-3 py-1 rounded-full inline-flex items-center">
+                  <div className="bg-[#9909CD]/10 text-[#9B87F5] text-sm px-3 py-1 rounded-full inline-flex items-center">
                     <span className="w-2 h-2 bg-[#9909CD] rounded-full mr-2 animate-pulse"></span>
                     Full-time | Current
                   </div>
                 </div>
-                <p className="text-[#9909CD] font-medium mb-2">
+                <p className="text-[#9B87F5] font-medium mb-2">
                   Dr. Masbah Uddin Consultancy
                 </p>
                 <p className="text-gray-300 text-sm">
@@ -146,12 +146,12 @@ const MyResume = () => {
                   <h4 className="text-white font-semibold text-lg">
                     MERN Stack Developer
                   </h4>
-                  <div className="bg-[#9909CD]/10 text-[#9909CD] text-sm px-3 py-1 rounded-full inline-flex items-center">
+                  <div className="bg-[#9909CD]/10 text-[#9B87F5] text-sm px-3 py-1 rounded-full inline-flex items-center">
                     <span className="w-2 h-2 bg-[#9909CD] rounded-full mr-2 animate-pulse"></span>
                     Part-time | Current
                   </div>
                 </div>
-                <p className="text-[#9909CD] font-medium mb-2">Codex Devware</p>
+                <p className="text-[#9B87F5] font-medium mb-2">Codex Devware</p>
                 <p className="text-gray-300 text-sm">
                   Building full-stack applications using MongoDB, Express,
                   React, and Node.js. Implementing complex features and ensuring
@@ -173,12 +173,12 @@ const MyResume = () => {
                   <h4 className="text-white font-semibold text-lg">
                     Operating Officer
                   </h4>
-                  <div className="bg-[#9909CD]/10 text-[#9909CD] text-sm px-3 py-1 rounded-full inline-flex items-center">
+                  <div className="bg-[#9909CD]/10 text-[#9B87F5] text-sm px-3 py-1 rounded-full inline-flex items-center">
                     <span className="w-2 h-2 bg-[#9909CD] rounded-full mr-2 animate-pulse"></span>
                     Part-time | Current
                   </div>
                 </div>
-                <p className="text-[#9909CD] font-medium mb-2">
+                <p className="text-[#9B87F5] font-medium mb-2">
                   Proborton Coaching Center
                 </p>
                 <p className="text-gray-300 text-sm">
@@ -202,11 +202,11 @@ const MyResume = () => {
                   <h4 className="text-white font-semibold text-lg">
                     Founding Member
                   </h4>
-                  <div className="bg-[#9909CD]/10 text-[#9909CD] text-sm px-3 py-1 rounded-full">
+                  <div className="bg-[#9909CD]/10 text-[#9B87F5] text-sm px-3 py-1 rounded-full">
                     Founding Member
                   </div>
                 </div>
-                <p className="text-[#9909CD] font-medium mb-2">
+                <p className="text-[#9B87F5] font-medium mb-2">
                   CPI Programming Community
                 </p>
                 <p className="text-gray-300 text-sm">

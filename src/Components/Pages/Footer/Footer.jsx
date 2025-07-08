@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <motion.div
-      className="mt-20 pt-10 border-t border-[#9909CD]/10 text-center relative z-10 bg-gradient-to-br from-[#1F0C35] to-[#150324] shadow-lg pb-16"
+      className="mt-20 pt-10 border-t border-[#9B87F5]/10 text-center relative z-10 bg-gradient-to-br from-[#1F0C35] to-[#150324] shadow-lg pb-16"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -21,7 +21,7 @@ const Footer = () => {
             href="https://github.com/kawsarcoder"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9B87F5]/20 transition-colors"
             whileHover={{ y: -3, scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -31,7 +31,7 @@ const Footer = () => {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#9909CD"
+              stroke="#9B87F5"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -45,7 +45,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/mdkawsar1403/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9B87F5]/20 transition-colors"
             whileHover={{ y: -3, scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -55,7 +55,7 @@ const Footer = () => {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#9909CD"
+              stroke="#9B87F5"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -68,7 +68,7 @@ const Footer = () => {
 
           <motion.a
             href="mailto:md.kawsar.developer@gmail.com"
-            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9909CD]/20 transition-colors"
+            className="w-10 h-10 rounded-full bg-[#160427] flex items-center justify-center hover:bg-[#9B87F5]/20 transition-colors"
             whileHover={{ y: -3, scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -78,7 +78,7 @@ const Footer = () => {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#9909CD"
+              stroke="#9B87F5"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -98,7 +98,7 @@ const Footer = () => {
       >
         <p className="text-gray-300 text-sm font-medium">
           &copy; {new Date().getFullYear()}{" "}
-          <span className="text-[#9909CD]">Md Kawsar</span> · All Rights
+          <span className="text-[#9B87F5]">Md Kawsar</span> · All Rights
           Reserved
         </p>
         <p className="text-gray-400 text-sm mt-1">

@@ -60,7 +60,7 @@ const AboutMe = () => {
           </motion.div>
 
           {/* Right column with content */}
-          <motion.div variants={itemVariants} className="md:w-3/5 lg:w-2/3">
+          <motion.div variants={itemVariants} className="md:w-3/5 lg:w-2/3 mt-12 md:mt-0">
             <motion.div
               variants={itemVariants}
               className=" bg-gradient-to-br from-[#2B0640] to-[#150324] backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-purple-300/10 shadow-purple"
@@ -83,7 +83,7 @@ const AboutMe = () => {
                 variants={itemVariants}
                 className=" mb-6 text-lg text-gray-400"
               >
-                I'm a passionate developer with 2+ years of experience building
+                I'm a passionate developer with 3+ years of experience building
                 web applications with modern technologies. I specialize in
                 creating beautiful, functional, and user-friendly experiences
                 that solve real-world problems.

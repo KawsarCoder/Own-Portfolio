@@ -50,7 +50,7 @@ const services = [
 const MyServices = () => {
   return (
     <div
-      className="min-h-screen px-6 py-40"
+      className="min-h-screen px-6 md:py-40 mt-20 md:mt-0"
       style={{ backgroundColor: "#150023" }}
     >
       {/* Section header */}
@@ -65,7 +65,7 @@ const MyServices = () => {
           <div className="text-center font-['Space_Grotesk'] text-4xl font-bold text-white inline-block  relative">
             <h3 className="relative z-10 ">Solutions I Provide</h3>
             <motion.span
-              className="absolute bottom-1 left-0 w-full h-3 bg-[#9909CD] -z-10"
+              className="absolute bottom-1 left-0 w-full h-3 bg-[#9B87F5] -z-10"
               initial={{ width: 0 }}
               whileInView={{ width: "100%" }}
               viewport={{ once: true }}
@@ -83,7 +83,7 @@ const MyServices = () => {
             {" "}
             {/* Inner glow effect on hover */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-br from-[#9909CD]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute inset-0 bg-gradient-to-br from-[#9B87F5]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 1 }}
             />

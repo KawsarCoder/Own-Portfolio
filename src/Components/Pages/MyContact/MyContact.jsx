@@ -8,7 +8,7 @@ const MyContact = () => {
     // contact container
     <section
       id="contact"
-      className="py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden"
+      className="md:py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden mt-20 md:mt-0"
     >
       {/* Animated background elements */}
       <motion.div

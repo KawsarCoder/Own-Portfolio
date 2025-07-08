@@ -13,14 +13,14 @@ const SkillCard = ({ name, icon, type }) => {
     >
       {/* Inner glow effect on hover */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-[#9909CD]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        className="absolute inset-0 bg-gradient-to-br from-[#9B87F5]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
       />
 
       {/* Animated border glow */}
       <motion.div
-        className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#9909CD]/0 via-[#9909CD]/30 to-[#9909CD]/0 opacity-0 group-hover:opacity-100"
+        className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#9B87F5]/0 via-[#9B87F5]/30 to-[#9B87F5]/0 opacity-0 group-hover:opacity-100"
         animate={{
           backgroundPosition: ["200% 0", "-200% 0"],
         }}
@@ -41,7 +41,7 @@ const SkillCard = ({ name, icon, type }) => {
           className="w-14 h-14 flex items-center justify-center mb-3 bg-[#200633] rounded-full shadow-lg"
           //   whileHover={{
           //     scale: 1.1,
-          //     backgroundColor: "#9909CD",
+          //     backgroundColor: "#9B87F5",
           //     transition: { duration: 0.2 },
           //   }}
         >
@@ -50,7 +50,7 @@ const SkillCard = ({ name, icon, type }) => {
 
         {/* Skill name */}
         {/* <motion.h4
-          className="font-['Space_Grotesk'] text-white text-md font-medium mt-1 group-hover:text-[#9909CD] transition-colors"
+          className="font-['Space_Grotesk'] text-white text-md font-medium mt-1 group-hover:text-[#9B87F5] transition-colors"
           whileHover={{ scale: 1.05 }}
         >
           {name}

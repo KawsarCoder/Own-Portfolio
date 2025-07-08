@@ -84,9 +84,9 @@ const MyProject = () => {
   ];
 
   return (
-    <section id="projects">
+    <section id="projects" className="mt-20 md:mt-0">
       {/* Section header */}
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <motion.div
           className="relative z-10 mb-16"
           initial={{ opacity: 0, y: -20 }}
@@ -106,10 +106,10 @@ const MyProject = () => {
           </div>
         </motion.div>
       </div>
-      <div className="grid grid-cols-12 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         {projects.map((project, index) => (
           <motion.div
-            className="relative col-span-4 rounded-2xl overflow-hidden shadow-2xl bg-[#1F0C34] group"
+            className="relative md:col-span-4 rounded-2xl overflow-hidden shadow-2xl bg-[#1F0C34] group"
             whileHover={{ rotateY: 10, rotateX: 10 }}
             transition={{ type: "spring", stiffness: 300 }}
             style={{ perspective: 1000 }}

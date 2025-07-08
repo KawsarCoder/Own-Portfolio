@@ -45,7 +45,7 @@ const Navbar = () => {
     if (element) {
       window.scrollTo({
         top: element.offsetTop - 80,
-        behavior: "smooth",
+        behavior: "auto",
       });
     }
   };
@@ -142,7 +142,7 @@ const Navbar = () => {
             <div className="flex-shrink-0 cursor-pointer">
               <Link href="/">
                 <span className="font-['Space_Grotesk'] text-2xl font-bold text-white">
-                  <span className="text-[#9909CD]">Md.</span> Kawsar
+                  <span className="text-[#9B87F5]">Md.</span> Kawsar
                 </span>
               </Link>
             </div>
@@ -160,8 +160,8 @@ const Navbar = () => {
                         onClick={() => scrollToSection(section)}
                         className={`px-4 py-2 rounded-full font-['Space_Grotesk'] font-medium transition-all ${
                           activeSection === section
-                            ? "text-white bg-[#9909CD]/20 border border-[#9909CD]/40"
-                            : "text-gray-300 hover:text-white hover:bg-[#9909CD]/10"
+                            ? "text-white bg-[#9B87F5]/20 border border-[#9B87F5]/40"
+                            : "text-gray-300 hover:text-white hover:bg-[#9B87F5]/10"
                         }`}
                         whileHover={{ y: -2 }}
                         whileTap={{ y: 0 }}
@@ -172,7 +172,7 @@ const Navbar = () => {
                   )}
                   <motion.a
                     href="/blogs"
-                    className="px-4 py-2 rounded-full font-['Space_Grotesk'] text-white font-medium bg-[#9909CD] hover:bg-[#8008af] shadow-md shadow-[#9909CD]/20 transition-all cursor-pointer"
+                    className="px-4 py-2 rounded-full font-['Space_Grotesk'] text-white font-medium bg-[#9B87F5] hover:bg-[#8008af] shadow-md shadow-[#9B87F5]/20 transition-all cursor-pointer"
                     whileHover={{ y: -2 }}
                     whileTap={{ y: 0 }}
                   >
@@ -181,7 +181,7 @@ const Navbar = () => {
                 </>
               ) : isBlogsPage ? (
                 <Link href="/">
-                  <button className="text-white bg-[#200633] hover:bg-[#9909CD]/20 flex items-center gap-2 px-4 py-2 rounded-full border border-[#9909CD]/30 transition-colors">
+                  <button className="text-white bg-[#200633] hover:bg-[#9B87F5]/20 flex items-center gap-2 px-4 py-2 rounded-full border border-[#9B87F5]/30 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -203,8 +203,8 @@ const Navbar = () => {
                   <motion.div
                     className={`px-4 py-2 rounded-full font-['Space_Grotesk'] font-medium transition-all ${
                       activeSection
-                        ? "text-white bg-[#9909CD]/20 border border-[#9909CD]/40"
-                        : "text-gray-300 hover:text-white hover:bg-[#9909CD]/10"
+                        ? "text-white bg-[#9B87F5]/20 border border-[#9B87F5]/40"
+                        : "text-gray-300 hover:text-white hover:bg-[#9B87F5]/10"
                     }`}
                     whileHover={{ y: -2 }}
                     whileTap={{ y: 0 }}
@@ -220,7 +220,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <motion.button
               onClick={toggleMobileMenu}
-              className="text-gray-300 hover:text-[#9909CD] transition-colors p-2"
+              className="text-gray-300 hover:text-[#9B87F5] transition-colors p-2"
               aria-label="Open mobile menu"
               whileTap={{ scale: 0.9 }}
             >
@@ -280,7 +280,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection(section)}
                     className={`w-full text-left block px-4 py-3 rounded-lg font-['Space_Grotesk'] font-medium ${
                       activeSection === section
-                        ? "text-[#9909CD] bg-[#9909CD]/10"
+                        ? "text-[#9B87F5] bg-[#9B87F5]/10"
                         : "text-gray-300"
                     }`}
                     whileTap={{ x: 5 }}
@@ -292,7 +292,7 @@ const Navbar = () => {
             </>
           ) : isBlogsPage ? (
             <Link href="/">
-              <button className="text-white bg-[#200633] hover:bg-[#9909CD]/20 flex items-center gap-2 px-4 py-2 rounded-full border border-[#9909CD]/30 transition-colors">
+              <button className="text-white bg-[#200633] hover:bg-[#9B87F5]/20 flex items-center gap-2 px-4 py-2 rounded-full border border-[#9B87F5]/30 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -312,7 +312,7 @@ const Navbar = () => {
           ) : (
             <Link href="/">
               <motion.div
-                className="w-full text-left block px-4 py-3 rounded-lg font-['Space_Grotesk'] text-white font-medium bg-[#9909CD]/20 cursor-pointer"
+                className="w-full text-left block px-4 py-3 rounded-lg font-['Space_Grotesk'] text-white font-medium bg-[#9B87F5]/20 cursor-pointer"
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
